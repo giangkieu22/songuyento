@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SNT</title>
+</head>
+<body>
+<script>
+    let c, b;
+    b = parseInt(prompt("Nhập số tự nhiên"))
+    if (b < 2) {
+        alert( b + " không phải số nguyên tố!");
+    }
+    if (b == 2) alert( b + " là số nguyên tố!");
+    for (c = 2; c < b; c++) {
+        if (b % c == 0) {
+            alert( b + " không phải số nguyên tố!");
+            break;
+        } else alert( b + " là số nguyên tố!");
+    }
+</script>
+</body>
+</html>
